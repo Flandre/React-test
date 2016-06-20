@@ -3,7 +3,8 @@
 <head lang="en">
   <meta charset="UTF-8">
   <script src="lib/react.min.js"></script>
-  <script src="lib/JSXTransformer.js"></script>
+  <script src="lib/react-dom.min.js"></script>
+  <!--script src="lib/JSXTransformer.js"></script-->
   <title></title>
 </head>
 <body>
@@ -37,12 +38,13 @@
     }
   });
 
-  React.render(
+  ReactDOM.render(
     <div>
       <TestClickComponent />
       <TestInputComponent/>
     </div>,
-    document.getElementById('container'))
+    document.getElementById('container')
+  )
 
 </script>
 </body>
