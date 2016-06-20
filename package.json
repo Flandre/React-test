@@ -5,7 +5,8 @@
   "description": "shikong is baka",
   "main": "index.js",
   "dependencies": {
-    "react": "^15.1.0"
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

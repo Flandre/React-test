@@ -10,6 +10,10 @@ module.exports = function (grunt) {
       react: {
         src: 'node_modules/react/dist/react.min.js',
         dest: 'lib/react.min.js'
+      },
+      react_dom: {
+        src: 'node_modules/react-dom/dist/react-dom.min.js',
+        dest: 'lib/react-dom.min.js'
       }
     },
     connect: {
