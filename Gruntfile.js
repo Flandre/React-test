@@ -18,7 +18,16 @@ module.exports = function (grunt) {
       react_bootstrap: {
         src: 'node_modules/react-bootstrap/dist/react-bootstrap.min.js',
         dest: 'lib/js/react-bootstrap.min.js'
+      },
+      bootstrap_css: {
+        src: 'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        dest: 'lib/css/bootstrap.min.css'
+      },
+      bootstrap_theme: {
+        src: 'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
+        dest: 'lib/css/bootstrap-theme.min.css'
       }
+
     },
     connect: {
       server: {
@@ -33,5 +42,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['copy', 'connect']);
+  grunt.registerTask('default', ['copy']);
 };
