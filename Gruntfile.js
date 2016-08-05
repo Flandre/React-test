@@ -14,6 +14,10 @@ module.exports = function (grunt) {
       react_dom: {
         src: 'node_modules/react-dom/dist/react-dom.min.js',
         dest: 'lib/react-dom.min.js'
+      },
+      react_bootstrap: {
+        src: 'node_modules/react-bootstrap/dist/react-bootstrap.min.js',
+        dest: 'lib/react-bootstrap.min.js'
       }
     },
     connect: {
