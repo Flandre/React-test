@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="lib/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="lib/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+  <script src="lib/js/browser.min.js"></script>
   <script src="lib/js/react.min.js"></script>
   <script src="lib/js/react-dom.min.js"></script>
-  <script src="lib/js/browser.min.js"></script>
   <script src="lib/js/react-bootstrap.min.js"></script>
 </head>
 <body>
@@ -13,6 +15,11 @@
 
 <script type="text/babel">
 
+  ReactDOM.render(
+
+    <button>Default</button>,
+    document.getElementById('container')
+  );
 
 </script>
 </body>
