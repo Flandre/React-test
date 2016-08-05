@@ -9,15 +9,15 @@ module.exports = function (grunt) {
     copy: {
       react: {
         src: 'node_modules/react/dist/react.min.js',
-        dest: 'lib/react.min.js'
+        dest: 'lib/js/react.min.js'
       },
       react_dom: {
         src: 'node_modules/react-dom/dist/react-dom.min.js',
-        dest: 'lib/react-dom.min.js'
+        dest: 'lib/js/react-dom.min.js'
       },
       react_bootstrap: {
         src: 'node_modules/react-bootstrap/dist/react-bootstrap.min.js',
-        dest: 'lib/react-bootstrap.min.js'
+        dest: 'lib/js/react-bootstrap.min.js'
       }
     },
     connect: {
@@ -33,5 +33,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['copy']);
+  grunt.registerTask('default', ['copy', 'connect']);
 };
