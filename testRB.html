@@ -8,7 +8,7 @@
   <script src="lib/js/browser.min.js"></script>
   <script src="lib/js/react.min.js"></script>
   <script src="lib/js/react-dom.min.js"></script>
-  <script src="lib/js/react-bootstrap.min.js"></script>
+  <!--script src="lib/js/react-bootstrap.min.js"></script-->
 </head>
 <body>
 <div id="container"></div>
@@ -16,8 +16,15 @@
 <script type="text/babel">
 
   ReactDOM.render(
+    /*
+     * JSX写法
+     */
+    //<button>Default</button>,
 
-    <button>Default</button>,
+    /*
+     * 原生写法
+     */
+    React.createElement('button', {}, 'Default'),
     document.getElementById('container')
   );
 
