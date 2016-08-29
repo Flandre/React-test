@@ -24,7 +24,8 @@ module.exports = {
   //添加我们的插件 会自动生成一个html文件
   plugins: [
     new HtmlwebpackPlugin({
-      title: 'Hello World app'
+      title: 'Hello World app'/*,
+      filename: '../index.html'*/
     })
   ]
 };
