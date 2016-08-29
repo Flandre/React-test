@@ -13,6 +13,14 @@ module.exports = {
     path: BUILD_PATH,
     filename: 'bundle.js'
   },
+  devServer: {
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: true,
+    port: 9000,
+    open: true
+  },
   //添加我们的插件 会自动生成一个html文件
   plugins: [
     new HtmlwebpackPlugin({
