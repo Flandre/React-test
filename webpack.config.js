@@ -24,8 +24,8 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
-        loaders: ['style', 'css'],
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
         include: APP_PATH
       }
     ]
@@ -34,7 +34,7 @@ module.exports = {
   plugins: [
     new HtmlwebpackPlugin({
       title: 'Hello World app'/*,
-      filename: '../index.html'*/
+       filename: '../index.html'*/
     })
   ]
 };
